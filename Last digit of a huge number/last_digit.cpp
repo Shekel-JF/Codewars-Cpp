@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 int last_digit(list<int> array)
 {
     int arr[3] = {1, 1, 1};
@@ -43,7 +42,7 @@ int last_digit(list<int> array)
     }
 	if(exp == 2)
     {
-		if(arr[2] == 1)
+	    if(arr[2] == 1)
         {
             return int(pow(arr[0], 2)) % 10;
         }
@@ -54,11 +53,11 @@ int last_digit(list<int> array)
 	}
 	if(exp == 3)
     {
-		if(arr[2] % 2 == 1)
+	    if(arr[2] % 2 == 1)
         {
             return int(pow(arr[0], 3)) % 10;
         }      
-		    else
+	    else
         {
             return int(pow(arr[0], 1)) % 10;
         }
